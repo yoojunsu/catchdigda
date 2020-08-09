@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no" />
+<title>Catch DigDa!</title>
+<link href="/img/favicon/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<link href="/css/game.css" type="text/css" rel="stylesheet" />
+<script src="/js/game.js" type="text/javascript"></script>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1 class="game-title">
+		Catch DigDa!
+	</h1>
+	<!-- 게임 섹션 -->
+	<div class="main">
+		<img src="/img/pika.gif" alt="피카츄" id="pikachu" />
+		<!-- 디그다 등장 -->
+		<div class="digda-box">
+		</div>
+		<!-- 스코어박스 -->
+		<div class="score-box">
+			<p>
+				Timer :
+				<span id="timer">0</span>
+			</p>
+			<p>
+				Score :
+				<span id="score">0</span>
+			</p>
+			<button type="button" class="start-btn" id="start-btn1">GAME START</button>
+			<button type="button" id="how-btn">How To Play?</button>
+		</div>
+		<!-- 게임 방법 박스 출력 -->
+		<div class="how-box game-box">
+			<h2>How To Play Catch DigDa?</h2>
+			<ul>
+				<li>1. 10초간 랜덤하게 등장하는 디그다를 클릭하여 몬스터볼로 잡아보세요!</li>
+				<li>2. 제한시간은 15초!</li>
+				<li>3. 하단 스코어보드에서 잡은 디그다의 숫자를 알 수 있습니다!</li>
+			</ul>
+			<button type="button" class="start-btn" id="start-btn2">GAME START!</button>
+		</div>
+		<!-- 게임종료후 박스 출력 -->
+		<div class="ending-box game-box">
+			<h2>축하합니다!</h2>
+			<p>
+				당신은 총 <span id="ending-score">0</span>마리의 디그다를 잡았습니다.
+			</p>
+			<button type="button" id="endingbox-close">닫기</button>
+			<button type="button" id="replay-btn">한번 더 플레이</button>
+		</div>	
+	</div>
+</body>
+</html>
